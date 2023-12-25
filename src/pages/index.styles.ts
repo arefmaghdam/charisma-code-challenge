@@ -25,10 +25,16 @@ export const CoinList = styled.div`
   overflow-y: scroll;
   border-radius: 50px;
   &::-webkit-scrollbar {
-    display: none;
+    display: none; 
   }
 `;
 
 export const StyledUl = styled.ul`
   padding: 15px;
 `;
+
+export const StyledLink = styled.p`
+  position: relative;
+  bottom: 0;
+`;
+

@@ -2,6 +2,10 @@
 
 This project is a TypeScript challenge code that explicates a portion of a digital currency project. Developed using TypeScript language, React library, and Next.js framework, it leverages technologies such as styled-components, redux-toolkit, and Jest.
 
+![dashboard](./assets/dashboard.JPG)
+
+![manage-tokens](./assets/manage-tokens.JPG)
+
 ## Project Overview
 
 The project focuses on digital currencies, offering insights into their functionality and management. Utilizing RESTful API requests through fetch, it establishes communication with the digital currencies' local data within the project.

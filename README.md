@@ -1,3 +1,5 @@
+> You'll find the documentation for online trading [here](./OnlineTradingDocs.md)
+
 # Digital Currency Project
 
 This project is a TypeScript challenge code that explicates a portion of a digital currency project. Developed using TypeScript language, React library, and Next.js framework, it leverages technologies such as styled-components, redux-toolkit, and Jest.

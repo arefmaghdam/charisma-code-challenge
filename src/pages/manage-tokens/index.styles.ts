@@ -10,25 +10,26 @@ export const Container = styled.div`
   gap: 2.8rem;
   max-width: 45rem;
   max-height: 100%;
-  padding: 10px;
   top: 75px;
 `;
 
 export const CoinList = styled.div`
   position: relative;
-  border: 1px solid blue;
-  height: 95%;
-  width: 100%;
-  padding: 10px;
+  border: 1.4px solid #282828;
+  height: 658px;
+  background-color: #131313;
+  width: 97%;
   top: 0;
   margin-bottom: 20px;
   overflow-y: scroll;
-  border-radius: 50px;
+  border-radius: 35px;
+  box-shadow: -4px -4px 10px 0px rgba(45, 45, 45, 0.93), 4px 4px 10px 0px rgba(0, 0, 0, 0.53),
+    inset 4px 4px 10px 0px rgba(0, 0, 0, 0.85), inset -4px -4px 10px 0px rgba(30, 30, 30, 0.69);
   &::-webkit-scrollbar {
     display: none;
   }
 `;
 
 export const StyledUl = styled.ul`
-  padding: 15px;
+  padding: 0;
 `;

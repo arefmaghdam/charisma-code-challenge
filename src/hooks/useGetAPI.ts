@@ -18,7 +18,7 @@ const useGetAPI = (searchTerm: string) => {
         })
         .then((data) => {
           if (data.cions.length > 0) {
-            setSearchResults(data.cions.map((item: any) => item.name));
+            setSearchResults(data.cions.map((item: any) => item.symbol));
             setShowNoTokenMessage(false);
             console.log(data);
           } else {
@@ -27,17 +27,17 @@ const useGetAPI = (searchTerm: string) => {
           }
         })
         .catch((error) => {
-            console.error('خطا در دریافت داده‌ها:', error);
-          })
-          .finally(() => {
-            setIsLoading(false); 
-          });
-      }, 1000);
-  
-      return () => clearTimeout(delayDebounceFn);
-    }, [searchTerm]);
-  
-    return { searchResults, isLoading, showNoTokenMessage };
-  };
+          console.error('خطا در دریافت داده‌ها:', error);
+        })
+        .finally(() => {
+          setIsLoading(false);
+        });
+    }, 1000);
+
+    return () => clearTimeout(delayDebounceFn);
+  }, [searchTerm]);
+
+  return { searchResults, isLoading, showNoTokenMessage };
+};
 
 export default useGetAPI;

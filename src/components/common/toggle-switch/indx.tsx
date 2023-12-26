@@ -13,14 +13,16 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
   isTokenEnabled
 }: ToggleButtonProps) => {
   return (
-    <ToggleSwitch>
-      <input
-        type="checkbox"
-        onChange={() => toggleToken(result)}
-        checked={isTokenEnabled(result)}
-      />
-      <span />
-    </ToggleSwitch>
+    <>
+      <ToggleSwitch>
+        <input
+          type="checkbox"
+          onChange={() => toggleToken(result)}
+          checked={isTokenEnabled(result)}
+        />
+        <span />
+      </ToggleSwitch>
+    </>
   );
 };
 

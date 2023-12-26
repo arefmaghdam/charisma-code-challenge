@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
     body{
         overflow-x: hidden;
-        font-family: IranSans;
+        font-family: Yekan;
         margin: 0;
         background-color: #1a1a1a;
     }

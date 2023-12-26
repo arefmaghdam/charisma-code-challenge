@@ -10,10 +10,12 @@ export const toggleToken = (
     const updatedTokens = enabledTokens.filter((item) => item !== token);
     setEnabledTokens(updatedTokens);
     dispatch(setSelectedSymbols(updatedTokens));
+    localStorage.setItem('selectedSymbols', JSON.stringify(updatedTokens));
   } else {
     const updatedTokens = [...enabledTokens, token];
     setEnabledTokens(updatedTokens);
     dispatch(setSelectedSymbols(updatedTokens));
+    localStorage.setItem('selectedSymbols', JSON.stringify(updatedTokens));
   }
 };
 

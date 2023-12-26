@@ -13,4 +13,5 @@ export const StyledInput = styled.input`
   4px 4px 10px 0px #000000 inset,
   -4px -4px 10px 0px #3A3A3AE3 inset;
   border: none;
+  font-family: Yekan;
 `;

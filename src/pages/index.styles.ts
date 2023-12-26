@@ -39,7 +39,7 @@ export const StyledUl = styled.ul`
 export const StyledLink = styled.p`
   position: relative;
   bottom: 0;
-  font-family: Yekan Bakh;
+  font-family: Yekan;
   font-size: 15px;
   font-weight: 500;
   line-height: 23px;
@@ -54,7 +54,7 @@ export const StyledTitle = styled.p`
   height: 31px;
   top: 42px;
   left: 164px;
-  font-family: Yekan Bakh;
+  font-family: Yekan;
   font-size: 20px;
   font-weight: 700;
   line-height: 31px;

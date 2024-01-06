@@ -7,9 +7,12 @@ const useGetAPI = (searchTerm: string) => {
 
   useEffect(() => {
     setIsLoading(true);
+    let controller = new AbortController();
 
     const delayDebounceFn = setTimeout(() => {
-      fetch(`/api/tokens?searchStr=${searchTerm}`)
+      fetch(`/api/tokens?searchStr=${searchTerm}`, {
+        signal: controller.signal
+      })
         .then((response) => {
           if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -34,7 +37,10 @@ const useGetAPI = (searchTerm: string) => {
         });
     }, 1000);
 
-    return () => clearTimeout(delayDebounceFn);
+    return () => {
+      clearTimeout(delayDebounceFn);
+      controller.abort();
+    };
   }, [searchTerm]);
 
   return { searchResults, isLoading, showNoTokenMessage };
